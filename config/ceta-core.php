@@ -3,7 +3,8 @@
 // config for Sixincode/CetaCore
 return [
   'title'         => 'ceta-core',
-  'slogan'         => '',
+  'slogan'         => 'Chambre Economique Tchado-Americaine<br>
+                       Chadian American Economic Chamber ',
   // translations
   'use_translations'  => true,
   'default_lang'  => 'en',
