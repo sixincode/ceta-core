@@ -12,6 +12,7 @@ class CetaCoreDatabaseSeeder extends Seeder
   public function run()
   {
     $this->call([
+      CetaPostsDatabaseSeeder::class,
       // CetaCoreOneDatabaseSeeder::class,
     ]);
   }

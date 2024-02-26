@@ -21,6 +21,7 @@
         "sixincode/hive-alpha": "dev-main",
         "sixincode/hive-display": "dev-main",
         "sixincode/hive-posts": "dev-main",
+        "sixincode/hive-stream": "dev-main",
         "sixincode/modules-init": "dev-main"
     },
     "require-dev": {

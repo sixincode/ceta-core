@@ -2,9 +2,12 @@
 
 // config for Sixincode/CetaCore
 return [
-  'title'         => 'ceta-core',
+  'title'          => 'CETA | CAEC',
   'slogan'         => 'Chambre Economique Tchado-Americaine<br>
                        Chadian American Economic Chamber ',
+  'appInMaintenance'  => false,
+  'appIsComingSoon'   => false,
+
   // translations
   'use_translations'  => true,
   'default_lang'  => 'en',

@@ -21,7 +21,7 @@ class CetaCoreServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('ceta-core')
-            ->hasConfigFile(['ceta-core','ceta-core-components','ceta-core-layouts','ceta-core-middlewares'])
+            ->hasConfigFile(['ceta-core','ceta-core-components','ceta-core-layouts','ceta-core-middlewares','ceta-core-features','ceta-core-posts'])
             ->hasViews()
             ->hasAssets()
             ->hasTranslations()

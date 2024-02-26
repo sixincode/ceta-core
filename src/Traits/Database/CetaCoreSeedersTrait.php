@@ -11,12 +11,17 @@ trait CetaCoreSeedersTrait
     $thid->seedOne();
     // $thid->seedTwo();
     // $thid->seedthree();
+  }
 
+  public function seedAll()
+  {
+    \HiveAlpha::seedAdmin();
+    $this->seed();
   }
 
   public function seedOne(): void
   {
-    $seeder = new Seeders\CetaCoreOneDatabaseSeeder;
+    $seeder = new Seeders\CetaCoreDatabaseSeeder;
     $seeder->run();
   }
 

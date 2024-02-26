@@ -22,11 +22,10 @@
     $reduce_padding = $reducePadding;
 @endphp
 <footer class="bottom-0 w-full bg-black">
-  <div class="container mx-auto">
-    <x-hive-display-section class='container px-4 sm:px-6 lg:px-8 py-6'>
+    <x-hive-display-section component='boxedXSection' class='w-full py-6'>
       <div class=" text-gray-500 sm:flex sm:items-center sm:justify-between">
       <div class="flex justify-center sm:justify-start text-sm">
-        <p>ceta-core <span class="text-xs">by 6ixin</span></p>
+        <p>CAEC | CETA <span class="text-xs"><a href="https://www.6ixin.com">by 6ixin</a></span></p>
       </div>
 
       <p class="mt-4 text-center text-xs lg:mt-0 lg:text-right">
@@ -35,5 +34,4 @@
     </div>
 
     </x-hive-display-section>
-  </div>
 </footer>

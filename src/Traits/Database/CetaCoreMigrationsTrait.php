@@ -13,6 +13,13 @@ trait CetaCoreMigrationsTrait
     // $this->migrateCetaCoreThreeUp();
   }
 
+
+  public function migrateUpAll(): void
+  {
+    \HiveAlpha::migrateUp();
+    \HivePosts::migrateUp();
+  }
+
   public function migrateDown(): void
   {
     $this->migrateCetaCoreOneDown();
@@ -20,6 +27,14 @@ trait CetaCoreMigrationsTrait
     // $this->migrateCetaCoreThreeDown();
   }
 
+  public function migrateDownAll(): void
+  {
+    // \HiveCalendar::migrateDown();
+    // \HiveStream::migrateDown();
+    \HivePosts::migrateDown();
+    \HiveAlpha::migrateDown();
+    $this->migrateDown();
+  }
   public function migrateCetaCoreOneUp(): void
   {
     $migration = new Migrations\CetaCoreOneTables;
