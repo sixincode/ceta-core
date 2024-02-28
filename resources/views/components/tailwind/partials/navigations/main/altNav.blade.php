@@ -19,7 +19,7 @@
             iconWidth='1.5'/>
 
           <x-hive-display-link
-            title='{{__("Blog")}}'
+            title='{{__("Publications")}}'
             url='{{route("central.blog")}}'
             text_color='text-gray-400 hover:text-gray-200'
             current='{{request()->routeIs( "central.blog.*")}}'
@@ -86,7 +86,7 @@
                   width='5'
                   height='6'
                   />
-                   {{__('Blog')}}
+                   {{__('Publications')}}
                </a>
              </div>
              <div class="py-6">

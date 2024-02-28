@@ -20,7 +20,7 @@
                 width='5'
                 height='6'
                 />
-                 {{__('Blog')}}
+                 {{__('Publications')}}
              </a>
            </div>
            <div class="py-6">

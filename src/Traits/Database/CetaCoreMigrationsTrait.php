@@ -18,6 +18,9 @@ trait CetaCoreMigrationsTrait
   {
     \HiveAlpha::migrateUp();
     \HivePosts::migrateUp();
+    \HiveCommunity::migrateUp();
+    \HiveNewsletter::migrateUp();
+    $this->migrateUp();
   }
 
   public function migrateDown(): void

@@ -11,10 +11,10 @@
         <x-hive-display-section component='boxedXSection' class='w-full'>
         <div class="relative py-16 sm:py-24 lg:py-32">
           <h1 class="tracking-tight mt-6">
-            <span class="block text-white font-extrabold text-3xl sm:text-5xl lg:text-7xl">{{__('Coming Soon')}}</span>
+            <span class="block text-white font-extrabold text-3xl sm:text-5xl lg:text-7xl">
+              {{__('Coming Soon')}}
+            </span>
           </h1>
-
-
           </div>
          </x-hive-display-section>
 

@@ -30,7 +30,7 @@
 
 
         <x-hive-display-link
-          title='{{__("Blog")}}'
+          title='{{__("Publications")}}'
           url='{{route("central.blog")}}'
           text_color='text-gray-400 hover:text-gray-200'
           current='{{request()->routeIs( "central.blog.*")}}'

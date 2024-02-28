@@ -12,7 +12,8 @@ return [
         "fr" =>"La mission de la CETA est d’aider les entreprises tchadiennes à renforcer leur compétitivité, à croître, à se développer et à prospérer. Accélérer l’innovation, le commerce et les investissements entre l’économie tchadienne et américaine.",
         "ar" =>"",
       ],
-      "code"      => "our_mission",
+      "code"           => "our_mission",
+      "reference"      => "our_core",
       "image"      => " ",
     ],
 
@@ -28,6 +29,7 @@ return [
         "ar" =>"",
       ],
       "code"      => "our_vision",
+      "reference"      => "our_core",
       "image"      => " ",
     ],
 
@@ -43,6 +45,7 @@ return [
         "ar" =>"",
       ],
       "code"      => "our_values",
+      "reference"      => "our_core",
       "image"      => " ",
     ],
 
@@ -58,7 +61,8 @@ return [
         "ar" =>"",
       ],
       "code"      => "benefit_grow_business",
-      "image"      => " ",
+      "reference"      => "services",
+      "image"      => "agg.jpg",
     ],
 
     [
@@ -73,13 +77,14 @@ return [
         "ar" =>"",
       ],
       "code"      => "benefit_doing_business_chad",
-      "image"      => " ",
+      "reference"      => "services",
+      "image"      => "mkttr.jpg",
     ],
 
     [
       "title"   => [
-        "en" =>"Partner in Chad",
-        "fr" =>" ",
+        "en" =>"Partnerships in Chad",
+        "fr" =>"Partenariats au Tchad",
         "ar" =>"",
       ],
       "description"   => [
@@ -88,13 +93,14 @@ return [
         "ar" =>"",
       ],
       "code"      => "benefit_partner_chad",
-      "image"      => " ",
+      "reference"      => "services",
+      "image"      => "farm1.jpg",
     ],
 
     [
       "title"   => [
         "en" =>"Connect in Africa",
-        "fr" =>" ",
+        "fr" =>"Connectez-vous en Afrique",
         "ar" =>"",
       ],
       "description"   => [
@@ -103,13 +109,14 @@ return [
         "ar" =>"",
       ],
       "code"      => "benefit_connect_africa",
-      "image"      => " ",
+      "reference"      => "services",
+      "image"      => "cntaf.jpg",
     ],
 
     [
       "title"   => [
         "en" =>"Invest in Chad",
-        "fr" =>" ",
+        "fr" =>"Investir au Tchad",
         "ar" =>"",
       ],
       "description"   => [
@@ -118,13 +125,14 @@ return [
         "ar" =>"",
       ],
       "code"      => "benefit_invest_chad",
-      "image"      => " ",
+      "reference"      => "services",
+      "image"      => "wmrk.jpg",
     ],
 
     [
       "title"   => [
         "en" =>"Trade in Chad",
-        "fr" =>" ",
+        "fr" =>"Commercez au Tchad",
         "ar" =>"",
       ],
       "description"   => [
@@ -133,7 +141,8 @@ return [
         "ar" =>"",
       ],
       "code"      => "benefit_trade_chad",
-      "image"      => " ",
+      "reference"      => "services",
+      "image"      => "db2.jpg",
     ],
 
 
@@ -144,48 +153,49 @@ return [
         "ar" =>"",
       ],
       "description"   => [
-        "en" =>"<p><strong>AGOA</strong>&nbsp;(African Growth and Opportunity Act) is a&nbsp;<strong>U.S. trade preference program</strong>&nbsp;that aims to enhance market access for qualifying&nbsp;<strong>Sub-Saharan African countries</strong>&nbsp;by granting them&nbsp;<strong>duty-free access to the U.S. market</strong>. Let&rsquo;s delve into the key aspects of AGOA:</p>
-<p></p>
+        "en" =>"
 <ol>
-<li><strong>Purpose</strong>: AGOA was signed into law by the U.S. Congress in May 2000. Its primary goal is to&nbsp;<strong>strengthen commercial ties</strong>between the United States and sub-Saharan Africa. By providing preferential trade agreements, AGOA encourages economic growth and development in the region.</li>
+<li><strong>Purpose</strong>: AGOA was signed into law by the U.S. Congress in May 2000. Its primary goal is to&nbsp;<strong>strengthen commercial ties</strong> between the United States and sub-Saharan Africa. By providing preferential trade agreements, AGOA encourages economic growth and development in the region.</li>
 <li><strong>Eligibility Criteria</strong>: To benefit from AGOA, countries must meet specific criteria, including adherence to principles of&nbsp;<strong>market-based economy</strong>,&nbsp;<strong>rule of law</strong>, and&nbsp;<strong>respect for human rights</strong>.</li>
 <li><strong>Product Coverage</strong>: AGOA covers over&nbsp;<strong>1,800 products</strong>, allowing eligible countries to export a wide range of goods to the U.S. market without paying duties.</li>
 <li><strong>Trade Impact</strong>: Since its inception, AGOA has facilitated trade between the U.S. and Africa. Notably,&nbsp;<strong>petroleum products</strong>constitute a significant portion of African exports under AGOA.</li>
 <li><strong>Renewal and Reform</strong>: AGOA has been extended several times, with the most recent extension in 2015, extending its validity until&nbsp;<strong>2025</strong>. Discussions continue on its future and potential reforms.</li>
 </ol>
 <p></p>
-<p><strong>AGOA</strong> plays a crucial role in fostering economic ties between the U.S. and Africa, benefiting both parties.</p><br>br>
+<p><strong>AGOA</strong> plays a crucial role in fostering economic ties between the U.S. and Africa, benefiting both parties.</p><br><br>
 <p><strong>States benefiting from AGOA:</strong></p>
-<p>&bull;South Africa</p>
 <p>&bull; Benin</p>
 <p>&bull; Botswana</p>
+<p>&bull; Cape Verde</p>
 <p>&bull; Chad</p>
-<p>&bull; Cape Verde<br /></p>
 <p>&bull; Republic of Congo</p>
 <p>&bull; Djibouti</p>
 <p>&bull; Ghana</p>
 <p>&bull; Guinea-Bissau</p>
-<p>&bull;Kenya</p>
+<p>&bull; Kenya</p>
 <p>&bull; Lesotho</p>
-<p>&bull;Malawi</p>
-<p>&bull;Mauritius</p>
-<p>&bull;Mozambique</p>
+<p>&bull; Malawi</p>
+<p>&bull; Mauritius</p>
+<p>&bull; Mozambique</p>
 <p>&bull; Namibia</p>
 <p>&bull; Nigeria</p>
-<p>&bull;Rwanda</p>
+<p>&bull; Rwanda</p>
 <p>&bull; Sao Tome and Principe</p>
-<p>&bull;Senegal</p>
+<p>&bull; Senegal</p>
+<p>&bull; South Africa</p>
 <p>&bull; Swaziland</p>
 <p>&bull; Tanzania</p>
 <p>&bull; Zambia</p>
 ",
-        "fr" =>"<p><strong>L'AGOA</strong> (African Growth and Opportunity Act) est un <strong>programme am&eacute;ricain de pr&eacute;f&eacute;rences commerciales</strong> qui vise &agrave; am&eacute;liorer l'acc&egrave;s au march&eacute; des <strong>pays d'Afrique subsaharienne</strong> &eacute;ligibles en leur accordant un <strong>acc&egrave;s en franchise de droits au march&eacute; am&eacute;ricain.</strong> Examinons les aspects cl&eacute;s de l&rsquo;AGOA :</p>
+        "fr" =>"
+<ol>
+<li><strong>Objectif</strong> : L&rsquo;AGOA a &eacute;t&eacute; promulgu&eacute;e par le Congr&egrave;s am&eacute;ricain en mai 2000. Son objectif principal est de renforcer les liens commerciaux entre les &Eacute;tats-Unis et l&rsquo;Afrique subsaharienne. En proposant des accords commerciaux pr&eacute;f&eacute;rentiels, l'AGOA encourage la croissance &eacute;conomique et le d&eacute;veloppement de la r&eacute;gion.</li>
+<li><strong>Crit&egrave;res d'&eacute;ligibilit&eacute;</strong> : Pour b&eacute;n&eacute;ficier de l'AGOA, les pays doivent r&eacute;pondre &agrave; des crit&egrave;res sp&eacute;cifiques, notamment l'adh&eacute;sion aux principes de <strong>l'&eacute;conomie de march&eacute;, de l'&Eacute;tat de droit</strong> et du <strong>respect des droits de l'homme</strong>.</li>
+<li><strong>Couverture des produits</strong> : L'AGOA couvre plus de <strong>1 800 produits</strong>, permettant aux pays &eacute;ligibles d'exporter une large gamme de produits vers le march&eacute; am&eacute;ricain sans payer de droits de douane.</li>
+<li><strong>Impact commercial</strong> : Depuis sa cr&eacute;ation, l'AGOA a facilit&eacute; le commerce entre les &Eacute;tats-Unis et l'Afrique. Les <strong>produits p&eacute;troliers</strong> constituent notamment une part importante des exportations africaines dans le cadre de l&rsquo;AGOA.</li>
+<li><strong>Renouvellement et r&eacute;forme</strong> : L'AGOA a &eacute;t&eacute; prorog&eacute;e &agrave; plusieurs reprises, la plus r&eacute;cente en 2015, prolongeant sa validit&eacute; jusqu'en 2025. Les discussions se poursuivent sur son avenir et ses r&eacute;formes potentielles.</li>
+</ol>
 <p></p>
-<p>1. <strong>Objectif</strong> : L&rsquo;AGOA a &eacute;t&eacute; promulgu&eacute;e par le Congr&egrave;s am&eacute;ricain en mai 2000. Son objectif principal est de renforcer les liens commerciaux entre les &Eacute;tats-Unis et l&rsquo;Afrique subsaharienne. En proposant des accords commerciaux pr&eacute;f&eacute;rentiels, l'AGOA encourage la croissance &eacute;conomique et le d&eacute;veloppement de la r&eacute;gion.</p>
-<p>2. <strong>Crit&egrave;res d'&eacute;ligibilit&eacute;</strong> : Pour b&eacute;n&eacute;ficier de l'AGOA, les pays doivent r&eacute;pondre &agrave; des crit&egrave;res sp&eacute;cifiques, notamment l'adh&eacute;sion aux principes de <strong>l'&eacute;conomie de march&eacute;, de l'&Eacute;tat de droit</strong> et du <strong>respect des droits de l'homme</strong>.</p>
-<p>3. <strong>Couverture des produits</strong> : L'AGOA couvre plus de <strong>1 800 produits</strong>, permettant aux pays &eacute;ligibles d'exporter une large gamme de produits vers le march&eacute; am&eacute;ricain sans payer de droits de douane.</p>
-<p>4. <strong>Impact commercial</strong> : Depuis sa cr&eacute;ation, l'AGOA a facilit&eacute; le commerce entre les &Eacute;tats-Unis et l'Afrique. Les <strong>produits p&eacute;troliers</strong> constituent notamment une part importante des exportations africaines dans le cadre de l&rsquo;AGOA.</p>
-<p>5. <strong>Renouvellement et r&eacute;forme</strong> : L'AGOA a &eacute;t&eacute; prorog&eacute;e &agrave; plusieurs reprises, la plus r&eacute;cente en 2015, prolongeant sa validit&eacute; jusqu'en 2025. Les discussions se poursuivent sur son avenir et ses r&eacute;formes potentielles.</p>
 <p><strong>L&rsquo;AGOA</strong> joue un r&ocirc;le crucial dans le renforcement des liens &eacute;conomiques entre les &Eacute;tats-Unis et l&rsquo;Afrique, au b&eacute;n&eacute;fice des deux parties.</p><br><br>
 <p><strong>&Eacute;tats b&eacute;n&eacute;ficiant de l'AGOA:</strong></p>
 <p>&bull; Afrique du Sud</p>
@@ -213,6 +223,7 @@ return [
         "ar" =>"",
       ],
       "code"      => "about_agoa",
+      "reference"      => "posts",
       "image"      => " ",
     ],
 
@@ -266,6 +277,7 @@ return [
         "ar" =>"",
       ],
       "code"      => "about_chad",
+      "reference"      => "posts",
       "image"      => " ",
     ],
 

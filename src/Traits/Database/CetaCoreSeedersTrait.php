@@ -8,7 +8,7 @@ trait CetaCoreSeedersTrait
 {
   public function seed(): void
   {
-    $thid->seedOne();
+    $this->seedOne();
     // $thid->seedTwo();
     // $thid->seedthree();
   }
@@ -16,6 +16,8 @@ trait CetaCoreSeedersTrait
   public function seedAll()
   {
     \HiveAlpha::seedAdmin();
+    \HiveCommunity::seed();
+    \HiveNewsletter::seed();
     $this->seed();
   }
 

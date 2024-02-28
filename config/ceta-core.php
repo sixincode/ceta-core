@@ -16,5 +16,16 @@ return [
   'locale_langs'  => [
     'en'          => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
     'fr'          => ['name' => 'French',  'script' => 'Latn', 'native' => 'Français', 'regional' => 'fr_FR'],
-  ]
+  ],
+  'table_names'   => [
+    'sectors'           => 'sectors',
+  ],
+  'column_names'   => [
+    'id'           => 'id',
+  ],
+  'reference_column'      => config('hive-helpers.column_names.reference'),
+  'reference_value'       => [
+    'publication'                 => 'publication',
+
+  ],
 ];

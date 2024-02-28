@@ -8,7 +8,7 @@ use Sixincode\HiveHelpers\Traits\FieldsTrait;
 use App\Models\User;
 use Sixincode\HivePosts\Models\Category;
 use Sixincode\HivePosts\Models\Tag;
-use Sixincode\HivePosts\Models\Post;
+use Sixincode\CetaCore\Models\Publication as Post;
 use Sixincode\CetaCore\Models\Model;
 use Illuminate\Support\Str;
 /**
@@ -23,19 +23,20 @@ class CetaPostsDatabaseSeeder extends Seeder
     $adminuser = User::whereEmail('admin@admin.com')->first();
     foreach (config('ceta-core-posts') as  $post) {
 
-      $post = Post::create([
-        'name'         =>  $post['title'],
+      $publication = Post::create([
+        'name'         => $post['title'],
         'description'  => $post['description'],
-        'reference'    => $post['code'] ?? Str::snake($post['title']),
+        'reference'    => $post['reference'] ?? "",
+        'code'         => $post['code'] ?? Str::snake($post['title']),
         'user_global'  => $adminuser->global,
       ]);
 
 
       if(array_key_exists('image',$post))
       {
-        $post->image = $post['image'];
+        $publication->image = $post['image'];
       }
-      $post->save();
+      $publication->save();
 
     }
 

@@ -1,5 +1,7 @@
 <x-hive-display-section class="bg-gray-50">
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <livewire-hive-newsletter-central-newsletter-display component="regNoSpamText">
+
     <div class="mx-auto max-w-lg text-center">
       <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
         Sign up to our newsletter

@@ -16,13 +16,13 @@
           </div>
           <div class="">
             <h1 class="tracking-tight mt-6">
-              <span class="block text-white font-extrabold text-6xl lg:text-8xl">CAEC</span>
+              <span class="block text-white font-extrabold text-6xl lg:text-8xl">{{__('ceta-core::core.title')}}</span>
             </h1>
-            <p class="text-slate-100 text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-6">Chadian American<br> Economic Chamber</p>
+            <p class="text-slate-100 text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-6">{!!__('ceta-core::core.descriptionBr')!!}</p>
           </div>
         </div>
-        <div class="text-gray-200 font-semibold text-2xl mt-12 text-center">
-          Connecting Chad and U.S partnership through commerce.
+        <div class="text-gray-200 font-semibold text-2xl mt-12">
+          {{__('ceta-core::core.slogan')}}
         </div>
         </div>
       </x-hive-display-section >
