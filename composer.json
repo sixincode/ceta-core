@@ -1,17 +1,17 @@
 {
-    "name": "sixincode/ceta-core",
-    "description": "ceta-core package",
+    "name": "sixincode/six-core",
+    "description": "6ixin core package",
     "keywords": [
         "sixincode",
         "laravel",
-        "ceta-core"
+        "six-core"
     ],
-    "homepage": "https://github.com/sixincode/ceta-core",
+    "homepage": "https://github.com/sixincode/six-core",
     "license": "MIT",
     "authors": [
         {
-            "name": "sixincode",
-            "email": "sixincode@6ixin.com",
+            "name": "aalexkarim",
+            "email": "alex@6ixin.com",
             "role": "Developer"
         }
     ],
@@ -19,28 +19,30 @@
         "php": "^8.1",
         "illuminate/contracts": "^10.0",
         "sixincode/hive-alpha": "dev-main",
+        "sixincode/hive-bookmarks": "dev-main",
+        "sixincode/hive-community": "dev-main",
         "sixincode/hive-display": "dev-main",
+        "sixincode/hive-helpers": "dev-main",
+        "sixincode/hive-newsletter": "dev-main",
         "sixincode/hive-posts": "dev-main",
         "sixincode/hive-stream": "dev-main",
-        "sixincode/modules-init": "dev-main"
+        "sixincode/hive-translation": "dev-main",
+        "sixincode/modules-init": "dev-main",
+        "sixincode/msx-namecheap": "dev-main",
+        "sixincode/msx-whois": "dev-main"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^7.9",
-        "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^7.7|^8.0",
-        "pestphp/pest": "^2.0",
-        "pestphp/pest-plugin-arch": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "Sixincode\\CetaCore\\": "src",
-            "Sixincode\\CetaCore\\Database\\Factories\\": "database/factories"
+            "Sixincode\\SixCore\\": "src",
+            "Sixincode\\SixCore\\Database\\Factories\\": "database/factories"
         },
         "files": [
             "src/helpers.php"
@@ -48,7 +50,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Sixincode\\CetaCore\\Tests\\": "tests"
+            "Sixincode\\SixCore\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -58,18 +60,55 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sixincode\\CetaCore\\CetaCoreServiceProvider"
+                "Sixincode\\SixCore\\SixCoreServiceProvider"
             ],
             "aliases": {
-                "CetaCore": "Sixincode\\CetaCore\\Facades\\CetaCore"
+                "SixCore": "Sixincode\\SixCore\\Facades\\SixCore"
             }
         }
     },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/sixincode/modules-init.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-alpha.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-stream.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-display.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-helpers.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-community.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-posts.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-form.git"
+      }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }

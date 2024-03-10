@@ -1,14 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Sixincode\CetaCore\Http\Controllers\Api\V1 as V1Controllers;
+use Sixincode\SixCore\Http\Controllers\Api\V1\Central as CentralApiControllers;
 
-// Route::middleware(
-//   config('ceta-core-middlewares.api', ['web']),
-// )
-// )->name('api.central.')->prefix('api/v1')->group(function () {
-// ->group(function () {
-//
-//    Route::post('/apiroute',  [V1Controllers\Central\CentralApiController::class, 'mainCentral'])->name('central.main');
-//
-// });
+Route::middleware(
+  config('six-core-middlewares.central.api', ['web']),
+)->name('api.central.')->prefix('v1')->group(function () {
+
+  // Route::post('/domains/search/{domain}',  [CentralApiControllers\DomainsApiController::class, 'searchDomain'])->name('domains.search');
+
+
+});

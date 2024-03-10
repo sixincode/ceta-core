@@ -1,18 +1,19 @@
 <?php
 
-namespace Sixincode\CetaCore\Http\Livewire\Central\Landing;
+namespace Sixincode\SixCore\Http\Livewire\Central\Landing;
 
 use Livewire\Component;
 
 class MainLanding extends Component
 {
-    public function mount()
-    {
+  public function mount()
+  {
 
-    }
+  }
 
-    public function render()
-    {
-      return view('ceta-core::livewire.central.landing.mainLanding');
-    }
+  public function render()
+  {
+    return view('six-core::livewire.central.landing.mainLanding');
+  }
+
 }
