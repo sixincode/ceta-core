@@ -21,5 +21,5 @@
     $has_shadow = $hasShadow;
     $reduce_padding = $reducePadding;
 @endphp
-<footer>
+<footer id="footer" class=" {{$class}}">
 </footer>

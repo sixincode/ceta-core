@@ -1,13 +1,20 @@
 <?php
 
-namespace Sixincode\SixCore\Components\Central\Landing;
+namespace Sixincode\CetaCore\Components\Central\Landing;
 
 use Illuminate\View\Component;
 
 class TopLanding extends Component
 {
-  public function render()
-  {
-      return view('six-core::components.central.landing.topLanding');
-  }
+    public function __construct(
+      //
+      )
+    {
+      //
+    }
+
+    public function render()
+    {
+      return view('ceta-core::components.central.landing.topLanding');
+    }
 }

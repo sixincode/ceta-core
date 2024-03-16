@@ -1,130 +1,129 @@
+<x-hive-display-section component='boxedXSection' class='w-full'>
+  <div class="flex justify-between">
+    <div class="flex lg:px-0 items-center">
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/">
+          <img id="mainLogo" class="mx-auto w-12 p-2 rounded-full" src="{{asset('/vendor/ceta-core/img/main/caec_logo.png')}}" alt="logo"/>
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:space-x-4">
 
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-<div class="relative justify-between flex">
-  <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
-    <!-- Mobile menu button -->
-    <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+        <x-hive-display-mega-menu class="absolute" width="full">
+            <x-slot name="trigger">
+
+             <x-hive-display-link
+               title='{{__("About")}}'
+               url='#'
+               current='{{request()->routeIs( "central.about.*")}}'
+               base='ceta-core::components'
+               component='simpleNav'
+               iconWidth='1.5'/>
+            </x-slot>
+            <x-slot name="content">
+              <!-- Domain menu section -->
+              <x-hive-display-link
+                base='ceta-core::components'
+                source='partials.navigations'
+                component='main.sectionAbout' />
+            </x-slot>
+         </x-hive-display-mega-menu>
+
+
+        <x-hive-display-link
+          title='{{__("Publications")}}'
+          url='{{route("central.blog")}}'
+          text_color='text-gray-400 hover:text-gray-200'
+          current='{{request()->routeIs( "central.blog.*")}}'
+          base='ceta-core::components'
+          component='simpleNav'
+          iconWidth='1.5'/>
+
+        <x-hive-display-link
+          title='{{__("Contact")}}'
+          url='{{route("central.contact")}}'
+          current='{{request()->routeIs( "central.contact.*")}}'
+          base='ceta-core::components'
+          component='simpleNav'
+          text_color='text-gray-400 hover:text-gray-200'
+          iconWidth='1.5'/>
+
+      </div>
+    </div>
+
+    <div class="hidden lg:ml-4 lg:flex lg:items-center">
+      <div class="flex justify-center space-x-6 items-center">
+         <x-hive-translation-lang-switch />
+
+
+
+      </div>
+    </div>
+
+    <div class="lg:hidden">
+    <button type="button" class="-my-2.5 inline-flex items-center justify-center rounded p-1.5 mt-1 text-gray-400 hover:bg-slate-50/40 hover:text-gray-600" @click="mobileMenu = true">
       <span class="sr-only">Open main menu</span>
-      <!--
-        Icon when menu is closed.
-
-        Menu open: "hidden", Menu closed: "block"
-      -->
-      <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-      <!--
-        Icon when menu is open.
-
-        Menu open: "block", Menu closed: "hidden"
-      -->
-      <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <path x-show="!mobileMenu" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        <path x-show="mobileMenu"  stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
   </div>
-  <div class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
-    <div class="menuSlogan flex flex-shrink-0 items-center">
-      <a href="/">
-        <span class="sr-only">{{env('APP_NAME', '6ix Innovation')}}</span>
-        <x-hive-form-icon
-         path='6ixin'
-         width='10'
-         height='10'
-         class='block'
-         />
-      </a>
-    </div>
-    <div class="hidden sm:ml-6 lg:flex lg:space-x-3 sm:py-2">
-
-    <x-hive-display-mega-menu class="absolute" width="full">
-        <x-slot name="trigger">
-          <x-hive-display-link
-            title='{{__("Domains")}}'
-            url='#'
-            current='{{request()->routeIs( "central.domains.*")}}'
-            base='six-core::components'
-            component='mainNavPill'
-            icon='domain'
-            iconWidth='1.5'/>
-        </x-slot>
-        <x-slot name="content">
-          <!-- Domain menu section -->
-          <x-hive-display-link
-            base='six-core::components'
-            source='partials.navigations'
-            component='main.sectionDomain' />
-        </x-slot>
-     </x-hive-display-mega-menu>
-
-     <x-hive-display-mega-menu class="absolute" width="full">
-         <x-slot name="trigger">
-           <x-hive-display-link
-             title='{{__("Websites")}} & {{__("Hostings")}}'
-             url='#'
-             current='{{request()->routeIs( "central.hostings.*")}}'
-             base='six-core::components'
-             component='mainNavPill'
-             icon='hosting'
-             iconWidth='1.5'/>
-         </x-slot>
-         <x-slot name="content">
-           <!-- Domain menu section -->
-           <x-hive-display-link
-             base='six-core::components'
-             source='partials.navigations'
-             component='main.sectionWebHosting' />
-         </x-slot>
-      </x-hive-display-mega-menu>
-
-      <x-hive-display-mega-menu class="absolute" width="full">
-          <x-slot name="trigger">
-            <x-hive-display-link
-              title='{{__("Marketing")}}'
-              url='#'
-              current='{{request()->routeIs( "central.marketing.*")}}'
-              base='six-core::components'
-              component='mainNavPill'
-              icon='marketing'
-              iconWidth='1.5'/>
-          </x-slot>
-          <x-slot name="content">
-            <!-- Domain menu section -->
-            <x-hive-display-link
-              base='six-core::components'
-              source='partials.navigations'
-              component='main.sectionMarketing' />
-          </x-slot>
-      </x-hive-display-mega-menu>
-
-      <x-hive-display-link
-        title='{{__("Consulting")}}'
-        url='#'
-        base='six-core::components'
-        component='mainNavPill'
-        icon='job'
-        iconWidth='1.5'/>
-
-    </div>
   </div>
-  <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-    <!-- Profile dropdown -->
-    <div class="relative ml-3">
-      <x-hive-display-dropdown>
-        <x-slot name="trigger">
-        <button type="button" class="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-          <span class="sr-only">Open user menu</span>
-          <span class="h-8 w-8 bg-slate-300 rounded-full"></span>
-         </button>
-        </x-slot>
-        <x-slot name="content">
-       <div class="">
-         redefdfdf
-       </div>
-      </x-slot>
-    </x-hive-display-dropdown>
+</x-hive-display-section>
+@push('scripts')
 
-    </div>
-  </div>
-</div>
-</div>
+	<script>
+		var scrollpos = window.scrollY;
+    var header = document.getElementById("mainMenu");
+    var mainLogo = document.getElementById("mainLogo");
+		var navcontent = document.getElementById("nav-content");
+		var navAccountBtn = document.getElementById("navAccountBtn");
+		var brandname = document.getElementById("brandname");
+		var sloganDisplay = document.querySelectorAll(".menuSlogan");
+
+		document.addEventListener('scroll', function() {
+
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 60) {
+        // header.classList.add("bg-black");
+        // header.classList.add("bg-black/90");
+        header.classList.add("shadow");
+        mainLogo.classList.add("p-3");
+				navAccountBtn.classList.remove("bg-white");
+				navAccountBtn.classList.add("bg-blue-600");
+				navAccountBtn.classList.remove("text-blue-600");
+				navAccountBtn.classList.add("text-white");
+				//Use to switch menuSlogan colours
+				for (var i = 0; i < sloganDisplay.length; i++) {
+					sloganDisplay[i].classList.add("text-gray-800");
+					sloganDisplay[i].classList.remove("text-gray-600");
+				}
+				header.classList.add("shadow-sm");
+				navcontent.classList.remove("bg-gray-100");
+				navcontent.classList.add("bg-white");
+			} else {
+        // header.classList.remove("bg-black");
+        // header.classList.remove("bg-black/90");
+        header.classList.remove("shadow");
+        mainLogo.classList.remove("p-3");
+				navAccountBtn.classList.remove("bg-blue-600");
+				navAccountBtn.classList.add("bg-white");
+				navAccountBtn.classList.remove("text-white");
+				navAccountBtn.classList.add("text-blue-600");
+				//Use to switch menuSlogan colours
+				for (var i = 0; i < sloganDisplay.length; i++) {
+					sloganDisplay[i].classList.add("text-gray-600");
+					sloganDisplay[i].classList.remove("text-gray-800");
+				}
+
+				header.classList.remove("shadow-sm");
+				navcontent.classList.remove("bg-white");
+				navcontent.classList.add("bg-gray-100");
+
+			}
+
+		});
+	</script>
+@endpush

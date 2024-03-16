@@ -1,3 +1,3 @@
-# 6ixin core package
+# ceta-core package
 
 sixincode template for hive serie packages.

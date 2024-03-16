@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>{{ config('app.name', 'Hive Display') }}</title>
+        <title>{{ config('ceta-core.title') }}</title>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        <link rel="icon" type="image/x-icon" href="{{asset('/vendor/ceta-core/img/favicon.png')}}">
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.9.0/cdn.min.js" defer></script>
@@ -19,7 +19,7 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body id="app" class="font-sans antialiased">
-        <div class="min-h-screen relative isolate bg-white overflow-hidden dark:bg-gray-700 ">
+        <div class="min-h-screen relative isolate bg-white overflow-hidden">
           <svg class="absolute inset-0 -z-10 h-full w-full stroke-slate-100 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
             <defs>
              <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
@@ -32,11 +32,8 @@
             <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
           </svg>
              <!-- Page Content -->
-            <div class="flex-1 flex-col ">
-              <x-hive-display-nav
-                base='six-core::components'
-                source='partials.navigations.main.operation'
-                component="simpleNav" />
+            <div class="">
+              <x-hive-display-nav/>
               <main id="main">
                 {{ $slot }}
               </main>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sixincode\SixCore\Database\Factories;
+namespace Sixincode\CetaCore\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
